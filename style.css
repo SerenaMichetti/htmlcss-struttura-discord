@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#r1,
+#r2,
+#r3,
+#r4 {
+    height: 10em;
+}
+
+#r1 {
+    background-color: lightblue;
+}
+
+#r3,
+#r5 {
+    background-color: lightgray;
+}
+
+#r6,
+#r7 {
+    background-color: black;
+}
+
+#r5 {
+    height: 20em;
+}
+#r6{
+    height: 15em;
+    border-bottom:solid 1px white;
+}
+#r7{
+    height: 5em;
+}
