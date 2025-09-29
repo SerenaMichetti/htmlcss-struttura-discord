@@ -40,6 +40,8 @@ main {
 #r6 {
     height: 15em;
     border-bottom: solid 1px white;
+    justify-content: center;
+    padding-top: 5px;
 }
 
 #r7 {
@@ -110,6 +112,7 @@ main {
 
 .dashed {
     border-style: dashed;
+    border:1px dashed
 }
 
 #r2,
@@ -139,7 +142,7 @@ main {
 }
 
 #r3 .blu-rectangle {
-    border-right: dashed;
+    border-right:1px  dashed;
     border-left: none;
 }
 
@@ -165,4 +168,21 @@ main {
     justify-content: space-between;
     align-items: center;
     background-color: #ffc0ca;
+}
+#salmon-rectangle{
+    background-color: #f08180;
+    height: 13em;
+    width: 7em;
+}
+#turquoise-rectangle{
+    background-color: turquoise;
+    height: 13em;
+    width: 17em;
+    display: flex;
+}
+.white-dashed{
+    border:1px dashed white;
+}
+.sub-rectangle{
+    width: 5em;
 }
