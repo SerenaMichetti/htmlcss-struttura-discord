@@ -59,7 +59,7 @@ main {
 }
 
 #r1-2 {
-    background-color: blue;
+    background-color: rgb(0, 0, 138);
     flex-basis: 8em;
     display: flex;
     justify-content: center;
@@ -73,32 +73,76 @@ main {
 
 .text {
     background-color: goldenrod;
-   
+
 }
-#logo, #login{
+
+#logo,
+#login {
     width: 6em;
 }
-#link{
+
+#link {
     width: 12em;
     border-left: none;
     border-right: none;
     display: flex;
     justify-content: center;
 }
-#logo{
+
+#logo {
     display: flex;
     padding-left: .5em;
 }
-#login{
+
+#login {
     display: flex;
     justify-content: flex-end;
     padding-right: .5em;
 }
-#pink-square {
-    background-color: palevioletred;
+
+#pink-rectangle {
+    background-color: #ee82ed;
     width: 15em;
     height: 6em;
 }
-.dashed{
-     border-style: dashed;
+
+.dashed {
+    border-style: dashed;
+}
+
+#r2,
+#r3,
+#r4,
+#r5 {
+    justify-content: center;
+    align-items: center;
+}
+
+.blu-rectangle {
+    background-color: #1e90ff;
+    height: 8em;
+    width: 16em;
+    border-right: none;
+}
+
+.pink-square {
+    background-color: #ffc0ca;
+    height: 8em;
+    width: 8em;
+}
+
+#r3 {
+    flex-direction: row-reverse;
+
+}
+
+#r3 .blu-rectangle {
+    border-right: dashed;
+    border-left: none;
+}
+
+#green-rectangle {
+    background-color: #218b21;
+    height: 18em;
+    width: 24em;
 }
