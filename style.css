@@ -18,19 +18,8 @@ main {
 }
 
 #r1 {
-    background-color: lightblue;
     flex-direction: column;
     justify-content: flex-end;
-}
-
-#r3,
-#r5 {
-    background-color: lightgray;
-}
-
-#r6,
-#r7 {
-    background-color: black;
 }
 
 #r5 {
@@ -50,34 +39,24 @@ main {
     align-items: flex-end;
 }
 
-#r1-1,
-#r1-2 {
+#r1>:first-child,
+#r1>:last-child {
     display: flex;
 }
 
-#r1-1 {
+#r1>:first-child {
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     flex-grow: 1;
 }
 
-#r1-2 {
-    background-color: rgb(0, 0, 138);
+#r1>:last-child {
     flex-basis: 8em;
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 1px;
 }
 
 .row {
     display: flex;
-}
-
-.text {
-    background-color: goldenrod;
-
 }
 
 #logo,
@@ -104,61 +83,127 @@ main {
     padding-right: .5em;
 }
 
-#pink-rectangle {
-    background-color: #ee82ed;
-    width: 15em;
-    height: 6em;
-}
-
-.dashed {
-    border-style: dashed;
-    border:1px dashed
-}
-
-#r2,
-#r3,
-#r4,
-#r5 {
+.centered{
     justify-content: center;
     align-items: center;
 }
 
-.blu-rectangle {
+#r3 {
+    flex-direction: row-reverse;
+}
+
+#r3 .normal-rectangle {
+    border-right: 1px dashed;
+    border-left: none;
+}
+ 
+
+/* bordi */
+
+.dashed {
+    border: 1px dashed
+}
+
+.white-dashed {
+    border: 1px dashed white;
+}
+
+
+/* colori*/
+
+.background-turquoise {
+    background-color: turquoise;
+}
+
+.background-salmon {
+    background-color: #f08180;
+}
+
+.background-aqua {
+    background-color: aquamarine;
+}
+
+.background-green {
+    background-color: #218b21;
+}
+
+.background-pink {
+    background-color: #ffc0ca;
+}
+
+.background-dark-pink {
+    background-color: #ee82ed;
+}
+
+.background-golden {
+    background-color: goldenrod;
+}
+
+.background-blue {
     background-color: #1e90ff;
+}
+
+.background-black {
+    background-color: black;
+}
+
+.background-grey {
+    background-color: lightgray;
+}
+
+.background-lightblue {
+    background-color: lightblue;
+}
+
+.background-darkblue {
+    background-color: rgb(0, 0, 138);
+}
+
+
+/* forme geometriche */
+
+.rectangle {
+    width: 15em;
+    height: 6em;
+}
+
+.large-rectangle {
+    height: 18em;
+    width: 24em;
+}
+
+.tall-rectangle {
+    height: 13em;
+    width: 7em;
+}
+
+.medium-rectangle {
+    height: 13em;
+    width: 17em;
+    display: flex;
+}
+
+.normal-rectangle {
     height: 8em;
     width: 16em;
     border-right: none;
 }
 
-.pink-square {
-    background-color: #ffc0ca;
-    height: 8em;
-    width: 8em;
+.sub-rectangle {
+    width: 5em;
 }
 
-#r3 {
-    flex-direction: row-reverse;
-
-}
-
-#r3 .blu-rectangle {
-    border-right:1px  dashed;
-    border-left: none;
-}
-
-#green-rectangle {
-    background-color: #218b21;
-    height: 18em;
-    width: 24em;
-}
-
-#aqua-bar {
-    background-color: aquamarine;
+.long-rectangle {
     width: 24em;
     height: 4em;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.square {
+    height: 8em;
+    width: 8em;
 }
 
 .button {
@@ -167,22 +212,4 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffc0ca;
-}
-#salmon-rectangle{
-    background-color: #f08180;
-    height: 13em;
-    width: 7em;
-}
-#turquoise-rectangle{
-    background-color: turquoise;
-    height: 13em;
-    width: 17em;
-    display: flex;
-}
-.white-dashed{
-    border:1px dashed white;
-}
-.sub-rectangle{
-    width: 5em;
 }
