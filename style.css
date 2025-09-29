@@ -44,6 +44,8 @@ main {
 
 #r7 {
     height: 5em;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 #r1-1,
@@ -145,4 +147,22 @@ main {
     background-color: #218b21;
     height: 18em;
     width: 24em;
+}
+
+#aqua-bar {
+    background-color: aquamarine;
+    width: 24em;
+    height: 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    width: 4em;
+    height: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffc0ca;
 }
